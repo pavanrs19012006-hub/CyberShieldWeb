@@ -54,8 +54,8 @@ CyberShield is a Java-based web application designed to analyze URLs and identif
 
 1. Install and start MySQL/MariaDB using XAMPP.
 2. Create a database named `cybershield_db`.
-3. Import the schema-only SQL file provided with the project
-4. 4. Configure the database connection in `hibernate.cfg.xml`.
+3. Import the schema-only SQL file provided with the project.
+4. Configure the database connection in `hibernate.cfg.xml`.
 5. Ensure the required database tables are created.
 
 ## How to Run
