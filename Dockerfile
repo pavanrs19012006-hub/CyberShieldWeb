@@ -5,10 +5,6 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 
 COPY CyberShieldWeb.war /usr/local/tomcat/webapps/ROOT.war
 
-COPY start.sh /start.sh
-
-RUN sed -i 's/\r$//' /start.sh && chmod +x /start.sh
-
 EXPOSE 8080
 
-CMD ["/start.sh"]
+CMD ["sh", "-c", "sed -i 's/port=\"8080\"/port=\"${PORT:-8080}\"/' /usr/local/tomcat/conf/server.xml && exec catalina.sh run"]
