@@ -1,15 +1,107 @@
+
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield - URL Security Analyzer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b1220;
+            color: white;
+        }
+        nav {
+            background: #17243a;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: #38bdf8;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        h1 { font-size: 45px; }
+        span { color: #38bdf8; }
+        p {
+            color: #cbd5e1;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background: #0284c7;
+            padding: 13px 25px;
+            margin: 20px 8px;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .card {
+            background: #17243a;
+            padding: 30px;
+            width: 230px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">CyberShield</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="login.jsp">Login</a>
+            <a href="register.jsp">Register</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Welcome to <span>CyberShield</span></h1>
+        <p>Smart Cyber Threat Detection and<br>URL Security Analyzer</p>
+        <a href="login.jsp" class="btn">Login</a>
+        <a href="register.jsp" class="btn">Register</a>
+    </div>
+
+    <div class="features">
+        <div class="card">
+            <h3>URL Scanner</h3>
+            <p>Analyze suspicious website URLs.</p>
+        </div>
+        <div class="card">
+            <h3>Threat Detection</h3>
+            <p>Identify potentially dangerous URLs.</p>
+        </div>
+        <div class="card">
+            <h3>Scan History</h3>
+            <p>View previously scanned URLs.</p>
+        </div>
+    </div>
+
+    <footer>CyberShield - AJT Project</footer>
+</body>
 </html>
